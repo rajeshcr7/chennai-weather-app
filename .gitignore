@@ -1,0 +1,22 @@
+# Terraform state and generated files
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfvars
+**/terraform.tfvars.json
+crash.log
+
+# Private keys and secrets
+*.pem
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS files
+.vscode/
+.DS_Store

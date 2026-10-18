@@ -1,0 +1,15 @@
+
+---
+- name: Inspect my EC2 server
+  hosts: webservers
+  gather_facts: true
+
+  tasks:
+    - name: Display server operating system
+      ansible.builtin.debug:
+        msg: "Operating system: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+    - name: Display server hostname
+      ansible.builtin.debug:
+        msg: "Hostname: {{ ansible_hostname }}"
+
